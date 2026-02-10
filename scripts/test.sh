@@ -73,13 +73,13 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-rm -rf /tmp/dataset
+rm -rf tmp_dataset
 mkdir -p output
-mkdir -p /tmp/dataset
-cp $DATASET /tmp/dataset
-DATASET=/tmp/dataset/$(basename $DATASET)
+mkdir -p tmp_dataset
+cp $DATASET tmp_dataset
+DATASET=tmp_dataset/$(basename $DATASET)
 
-python3 scripts/split_data.py $DATASET $(($WORLD_SIZE*$GPU_NUM)) /tmp/dataset # 8
+python3 scripts/split_data.py $DATASET $(($WORLD_SIZE*$GPU_NUM)) tmp_dataset # 8
 
 for i in $(seq 0 $(($GPU_NUM - 1))); do
     CUDA_VISIBLE_DEVICES=$i torchrun --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr=0.0.0.0 --master_port=$((14801 + i + 8 * RANK)) \
@@ -89,7 +89,7 @@ for i in $(seq 0 $(($GPU_NUM - 1))); do
             --pred_rank $((8 * $RANK + i)) \
             --deepspeed ./scripts/zero${DEEPSPEED}.json \
             --model_name_or_path "$MODEL" \
-            --dataset_use /tmp/dataset/$((8 * $RANK + i)).json \
+            --dataset_use tmp_dataset/$((8 * $RANK + i)).json \
             --tune_mm_vision $TRAIN_ENC \
             --tune_mm_mlp $TRAIN_PROJ \
             --tune_mm_llm $TRAIN_LLM \

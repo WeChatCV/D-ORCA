@@ -166,5 +166,5 @@ output
 test_data
 models/
 preprocess_dataset/
-dataset/
+tmp_dataset/
 lock/
