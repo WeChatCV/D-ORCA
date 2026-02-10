@@ -52,7 +52,6 @@ D-ORCA achieves state-of-the-art performance on our curated **DVD-Bench**.
 | Qwen3-Omni-Instruct (30B) | 67.8 | 91.3 | - | 63.5 | 60.6 | - |
 | **D-ORCA (8B)** | **81.1** | **16.6** | **57.1** | **78.0** | **17.5** | **37.8** |
 
----
 
 D-ORCA also achieves competitive results on general audio-visual benchmarks.
 
