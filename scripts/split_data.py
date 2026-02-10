@@ -1,3 +1,5 @@
+# Adopted from https://github.com/bytedance/video-SALMONN-2. The original license is located at 'third-party-license/video-salmonn-2.txt'.
+
 import json
 import sys
 import os

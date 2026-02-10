@@ -1,3 +1,5 @@
+# This script is based on https://github.com/huggingface/transformers/blob/main/src/transformers/models/whisper/modeling_whisper.py
+
 import math
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple, Union

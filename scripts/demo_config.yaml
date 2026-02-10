@@ -1,0 +1,12 @@
+video_path: /mnt/sh/mmvision/home/changlitang/test/zootopia2.mp4
+audio_path: /mnt/sh/mmvision/home/changlitang/test/zootopia2.wav
+
+question: Please describe this video comprehensively, focusing primarily on the character dialogue.
+# question: 请详细描述这段视频，尤其要说明谁说了什么。
+
+interval: 0.5
+max_frames: 128
+max_new_tokens: 3072
+
+do_sample: True # False # 
+seed: 2025 #
