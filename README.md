@@ -85,7 +85,7 @@ pip install -r new_req.txt
 
 For evaluation on a whole dataset:
 
-1. Prepare the dataset following `scripts/example_sft.json`.
+1. Prepare the dataset following `scripts/example_data.json`.
 2. Modify the parameters in `scripts/direct_test.sh`.
 3. Run `bash scripts/direct_test.sh`.
 
