@@ -1,0 +1,16 @@
+[
+  {
+    "video": "xxx.mp4",
+    "audio": "xxx.mp4",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<video>\nPlease provide a comprehensive description of this video, especially noting who said what."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ]
+  }
+]
