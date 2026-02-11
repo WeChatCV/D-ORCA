@@ -10,6 +10,7 @@
 <a href="https://arxiv.org/abs/2602.07960"><img src="https://img.shields.io/badge/arXiv-2602.07960-b31b1b.svg" alt="arXiv"></a>
 <a href="https://huggingface.co/tsinghua-ee/D-ORCA-8B-0210"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Model-yellow" alt="HuggingFace"></a>
 <a href="https://d-orca-llm.github.io/"><img src="https://img.shields.io/badge/🌐%20Project-Page-blue" alt="Project Page"></a>
+<a href="https://github.com/WeChatCV/D-ORCA"><img src="https://img.shields.io/badge/GitHub-Code-blue" alt="GitHub Code"></a>
 <a href="https://github.com/WeChatCV/D-ORCA/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-green" alt="License"></a>
 
 </div>
